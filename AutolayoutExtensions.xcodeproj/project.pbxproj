@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		17090B9C1CA1A1F70071DB45 /* AutolayoutExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 17090B9B1CA1A1F70071DB45 /* AutolayoutExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17090BA41CA1A20B0071DB45 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17090BA31CA1A20B0071DB45 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17090B981CA1A1F70071DB45 /* AutolayoutExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutolayoutExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17090B9B1CA1A1F70071DB45 /* AutolayoutExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutExtensions.h; sourceTree = "<group>"; };
 		17090B9D1CA1A1F70071DB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17090BA31CA1A20B0071DB45 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				17090B9B1CA1A1F70071DB45 /* AutolayoutExtensions.h */,
+				17090BA31CA1A20B0071DB45 /* UIViewExtensions.swift */,
 				17090B9D1CA1A1F70071DB45 /* Info.plist */,
 			);
 			path = AutolayoutExtensions;
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17090BA41CA1A20B0071DB45 /* UIViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +232,7 @@
 		17090BA11CA1A1F70071DB45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +243,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CHOI.AutolayoutExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		17090BA21CA1A1F70071DB45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
