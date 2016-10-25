@@ -9,19 +9,19 @@
 
 public extension UIView {
     
-    public func addConstraintsWithVisualFormatStrings(formatStrings: [String], views: [String: AnyObject]) -> [NSLayoutConstraint] {
-        return addConstraintsWithVisualFormatStrings(formatStrings: formatStrings, options: [], metrics: [:], views: views)
+    public func addConstraints(formatStrings: [String], views: [String: AnyObject]) -> [NSLayoutConstraint] {
+        return addConstraints(formatStrings: formatStrings, options: [], metrics: [:], views: views)
     }
     
-    public func addConstraintsWithVisualFormatStrings(formatStrings: [String], metrics: [String: AnyObject], views: [String: AnyObject]) -> [NSLayoutConstraint] {
-        return addConstraintsWithVisualFormatStrings(formatStrings: formatStrings, options: [], metrics: metrics, views: views)
+    public func addConstraints(formatStrings: [String], metrics: [String: AnyObject], views: [String: AnyObject]) -> [NSLayoutConstraint] {
+        return addConstraints(formatStrings: formatStrings, options: [], metrics: metrics, views: views)
     }
     
-    public func addConstraintsWithVisualFormatStrings(formatStrings: [String], options: NSLayoutFormatOptions, metrics: [String: AnyObject], views: [String: AnyObject]) -> [NSLayoutConstraint] {
-        return addConstraintsWithVisualFormatStrings(formatStrings: formatStrings, options: options, metrics: metrics, views: views)
+    public func addConstraints(formatStrings: [String], options: NSLayoutFormatOptions, views: [String: AnyObject]) -> [NSLayoutConstraint] {
+        return addConstraints(formatStrings: formatStrings, options: options, metrics: [:], views: views)
     }
     
-    public func addConstraints(withVisualFormats formatStrings: [String], options: NSLayoutFormatOptions = [], metrics: [String: AnyObject] = [:], views: [String: AnyObject]) -> [NSLayoutConstraint] {
+    public func addConstraints(formatStrings: [String], options: NSLayoutFormatOptions, metrics: [String: AnyObject], views: [String: AnyObject]) -> [NSLayoutConstraint] {
         var constraints = [NSLayoutConstraint]()
         
         for formatString in formatStrings {
