@@ -66,6 +66,7 @@ public extension UIView {
                 bottom: anchorBottomToBottomEdgeOfView(view, constant: -bottomInset))
     }
     
+    @discardableResult
     public func anchorWidthAndHeightToSize(_ size: CGSize) -> (width: NSLayoutConstraint, height: NSLayoutConstraint) {
         return (width: anchorWidthToConstant(size.width),
                 height: anchorHeightToConstant(size.height))
@@ -253,6 +254,7 @@ public extension UIView {
         return constraint
     }
     
+    @discardableResult
     public func anchorCenterToCenterOfView(_ view: UIView) -> (centerX: NSLayoutConstraint, centerY: NSLayoutConstraint) {
         return (centerX: anchorCenterXToCenterXOfView(view),
                 centerY: anchorCenterYToCenterYOfView(view))
